@@ -49,6 +49,8 @@ IF(FP16_INSTALL_LIBRARY)
   INCLUDE(GNUInstallDirs)
   INSTALL(FILES include/fp16.h
     DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}")
+  INSTALL(FILES include/fp16/rvv.h
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/fp16")
   INSTALL(FILES
       include/fp16/bitcasts.h
       include/fp16/fp16.h
